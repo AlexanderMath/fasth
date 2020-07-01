@@ -1,5 +1,5 @@
 # FastH
-Code accompanying article 'Fast Orthogonal Parameterization with Householder Matrices' accepted for publication at the ICML 2020 Workshop on <a href="https://invertibleworkshop.github.io/">Invertible Neural Networks and Normalizing Flows</a>. 
+Code accompanying article 'Fast Orthogonal Parameterization with Householder Matrices' accepted for publication at the ICML 2020 Workshop on <a target="_blank" href="https://invertibleworkshop.github.io/">Invertible Neural Networks and Normalizing Flows</a>. 
 
 # Requirements 
 Run 
@@ -11,7 +11,7 @@ Check installation by running test cases.
 python test_case.py
 ```
 
-See <a href="test_case.py">'test_case.py'</a> for expected output.
+See <a target="_blank" href="test_case.py">test_case.py</a> for expected output.
 
 
 # Minimal Working Example 
@@ -43,8 +43,6 @@ d  = 512
 onet = OrthNet(d=d)
 onet.forward(torch.zeros(d, bs))
 ```
-
-
 
 # Bibtex
 If you use this code, please cite 
