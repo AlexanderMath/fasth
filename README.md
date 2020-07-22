@@ -1,5 +1,5 @@
 # FastH
-Code accompanying article 'Fast Orthogonal Parameterization with Householder Matrices' accepted for publication at the ICML 2020 Workshop on <a target="_blank" href="https://invertibleworkshop.github.io/">Invertible Neural Networks and Normalizing Flows</a>. 
+Code accompanying article <a href="https://invertibleworkshop.github.io/accepted_papers/pdfs/10.pdf">Fast Orthogonal Parameterization with Householder Matrices</a> accepted for publication at the ICML 2020 Workshop on <a target="_blank" href="https://invertibleworkshop.github.io/">Invertible Neural Networks and Normalizing Flows</a>. 
 
 # Requirements 
 Run 
