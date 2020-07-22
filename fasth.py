@@ -35,7 +35,7 @@ def sequential_inv_mult(V, X):
 # ------ Load c++ and cuda code.  ---------
 t0 = time.time()
 print("Compiling our c++/cuda code, this usually takes 1-2 min. ")
-algo = load(name="ajskldjaskldjkl", sources=["fasth.cpp", "fasth_cuda.cu"])
+algo = load(name="fasth", sources=["fasth.cpp", "fasth_cuda.cu"])
 print("Finished compilation, took: %.4fs"%(time.time()-t0))
 
 def algo_compute_dec(V, m):
