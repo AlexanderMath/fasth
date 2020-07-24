@@ -34,7 +34,7 @@ import torch
 import torch.nn as nn 
 from torch.utils.cpp_extension import load
 import time
-from fasth import *
+from fasth_wrapper import *
 
 torch.manual_seed(42)
 torch.set_default_tensor_type('torch.cuda.FloatTensor')
