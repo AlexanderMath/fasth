@@ -1,5 +1,5 @@
 # FastH
-Code accompanying article <a href="https://invertibleworkshop.github.io/accepted_papers/pdfs/10.pdf">What if Neural Networks had SVDs?</a> accepted for spotlight presentation at NeurIPS 2020. 
+Code accompanying article <a href="https://arxiv.org/abs/2009.13977">What if Neural Networks had SVDs?</a> accepted for spotlight presentation at NeurIPS 2020. 
 
 <p align="center">
 <img src="plot.png" width="400px" height="200px" >
