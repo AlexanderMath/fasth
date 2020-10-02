@@ -1,5 +1,5 @@
 # FastH
-Code accompanying article <a href="https://invertibleworkshop.github.io/accepted_papers/pdfs/10.pdf">Fast Orthogonal Parameterization with Householder Matrices</a> accepted for publication at the ICML 2020 Workshop on <a target="_blank" href="https://invertibleworkshop.github.io/">Invertible Neural Networks and Normalizing Flows</a>. 
+Code accompanying article <a href="https://invertibleworkshop.github.io/accepted_papers/pdfs/10.pdf">What if Neural Networks had SVDs?</a> accepted for spotlight presentation at NeurIPS 2020. 
 
 <p align="center">
 <img src="plot.png" width="400px" height="200px" >
@@ -52,10 +52,10 @@ onet.forward(torch.zeros(d, bs))
 If you use this code, please cite 
 ```
 @inproceedings{fasth,
-    title={{F}aster {O}rthogonal {P}arameterization with {H}ouseholder {M}atrices},
+    title={What If Neural Networks had SVDs?,
     author={Mathiasen, Alexander and Hvilsh{\o}j, Frederik and J{\o}rgensen, Jakob R{\o}dsgaard and Nasery, Anshul and Mottin, Davide},
-    booktitle={ICML Workshop on Invertible Neural Networks and Normalizing Flows},
+    booktitle={NeurIPS},
     year={2020}
 }
 ```
-
+A previous version of the <a href="https://invertibleworkshop.github.io/accepted_papers/pdfs/10.pdf" target="_blank">article</a> was presented at the ICML workshop on <a target="_blank" href="https://invertibleworkshop.github.io/">Invertible Neural Networks and Normalizing Flows</a>. This does not constitute a dual submission because the workshop does not qualify as an archival peer reviewed venue.
