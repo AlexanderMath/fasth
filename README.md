@@ -22,30 +22,28 @@ See <a target="_blank" href="test_case.py">test_case.py</a> for expected output.
 
 ```
 import torch
-from fasth import Orthogonal 
+from fasth_wrapper import Orthogonal 
 
-class OrthNet(torch.nn.Module): 
+class LinearSVD(torch.nn.Module): 
 
 	def __init__(self, d, m=32): 
-		super(OrthNet, self).__init__()
+		super(LinearSVD, self).__init__()
 		self.d		  = d
 
-		self.o1 = Orthogonal(d, m)
-		self.o2 = Orthogonal(d, m)
-		self.o3 = Orthogonal(d, m)
+		self.U = Orthogonal(d, m)
+		self.D = torch.empty(d, 1).uniform_(0.99, 1.01)
+		self.V = Orthogonal(d, m)
 
 	def forward(self, X):
-		X = self.o1(X)
-		X = torch.nn.functional.relu(X)
-		X = self.o2(X)
-		X = torch.nn.functional.relu(X)
-		X = self.o3(X)
+		X = self.U(X)
+		X = self.D * X 
+		X = self.V(X)
 		return X 
 
 bs = 32
 d  = 512
-onet = OrthNet(d=d)
-onet.forward(torch.zeros(d, bs))
+neuralSVD = LinearSVD(d=d)
+neuralSVD.forward(torch.zeros(d, bs).normal_())
 ```
 
 # Bibtex
