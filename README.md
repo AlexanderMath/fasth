@@ -19,13 +19,11 @@ See <a target="_blank" href="test_case.py">test_case.py</a> for expected output.
 
 
 # Minimal Working Example 
-
 ```
 import torch
 from fasth_wrapper import Orthogonal 
 
 class LinearSVD(torch.nn.Module): 
-
 	def __init__(self, d, m=32): 
 		super(LinearSVD, self).__init__()
 		self.d		  = d
