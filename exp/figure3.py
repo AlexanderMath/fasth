@@ -45,3 +45,4 @@ for i, d in enumerate(range(64, 512+1, 64)):
 	np.savez("data", data)
 	
 import plot  
+plot.plot()
