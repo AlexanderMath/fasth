@@ -164,5 +164,23 @@ class OrthNet(torch.nn.Module):
 		X = self.o3(X)
 		return X 
 
+# -----------------------------------------
+
+class LinearSVD(torch.nn.Module): 
+	def __init__(self, d, m=32): 
+		super(LinearSVD, self).__init__()
+		self.d		  = d
+
+		self.U = Orthogonal(d, m)
+		self.D = torch.empty(d, 1).uniform_(0.99, 1.01)
+		self.V = Orthogonal(d, m)
+
+	def forward(self, X):
+		X = self.U(X)
+		X = self.D * X 
+		X = self.V(X)
+		return X 
+
+# -----------------------------------------
 
 
