@@ -6,7 +6,9 @@ Code accompanying article <a href="https://arxiv.org/abs/2009.13977" target="_bl
 </p>
 
 # Requirements 
-Run 
+First, check out how to run the code in <a href="https://colab.research.google.com/drive/1cEj2tSuAYGtG222bieKH4AZ_omIjAAvl?usp=sharing" target="_blank">Google Colab</a>. 
+
+To install locally, run 
 ```
 pip install -r requirements.txt
 ```
