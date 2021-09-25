@@ -28,10 +28,12 @@ def Q(V):  # O(d^4)
   return M
 
 # New algorithm with O(d/t + log2(t)) operations. 
-def fasthpp(V, X, stop_recursion=None): 
+def fasthpp(V, X, stop_recursion=3): 
   """
     V: matrix that represent weights of householder matrices (d, d)
     X: rectangular matrix (d, bs) to compute H(V) @ X
+    stop_recursion: integer that controls how many merge iterations before recursion stops. 
+    		    if None recursion continues until base case. 
   """
   d = V.shape[0]
 
