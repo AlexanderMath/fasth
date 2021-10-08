@@ -7,7 +7,7 @@ Code accompanying article <a href="https://arxiv.org/abs/2009.13977" target="_bl
 <img src="plot.png" width="400px" height="200px" >
 </p>
 
-**UPDATE:** We currently recommend using the newer fasth++ algorithm from <a href="https://github.com/AlexanderMath/fasth/edit/master/README.md" target="_blank">fasthpp.py</a> which only uses PyTorch (no need to compile CUDA code)!
+**UPDATE:** We currently recommend using the newer fasth++ algorithm from <a href="https://github.com/AlexanderMath/fasth/blob/master/fasthpp.py" target="_blank">fasthpp.py</a> which only uses PyTorch (no need to compile CUDA code)!
 
 If, for some reason, you want to use our CUDA code, please see this <a href="https://colab.research.google.com/drive/1cEj2tSuAYGtG222bieKH4AZ_omIjAAvl?usp=sharing" target="_blank">Google Colab</a>. 
 
